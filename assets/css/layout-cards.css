@@ -1,0 +1,83 @@
+.header h2 {
+    background-color: #FFF6C3;
+}
+main {
+    background-image: url(/assets/images/fundo.svg);
+    background-size: cover;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    row-gap: 3vw;
+}
+.cards-img{
+    width:auto;   
+    margin: auto;
+    
+    
+   
+    
+}
+.cards {
+    border-radius: 10px 10px 0 0;
+    margin:auto;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    width: 20vw;     
+    max-width: 350px;
+    /* padding: 0.5rem; */
+    
+}
+.cards h3 {
+    color: #c40008;     
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.cards p {    
+    font-size: 0.9rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+   
+
+}
+
+.cards a {
+    width: 40px;
+    margin-top: 5px;
+    padding: 5px;
+    align-self: flex-end;
+    
+}
+.cards a:hover {
+    transform: scale(1.1);
+} 
+@media screen and (max-width: 769px) {
+    header h2 {
+        background-color: #FFF3Ad;
+    }
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cards {
+        width: 35vw;
+    }
+    .cards a{
+        width: 30px;
+
+    }
+}
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .cards {
+        width: 60vw;
+    }
+}

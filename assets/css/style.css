@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+}
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+img {
+    max-width: 100%;
+}
+header img {
+    margin-top: 50px;
+    margin-left: 2%;
+    width: 30%;
+    min-width: 200px;
+}
+header h2 {
+    margin: auto;
+    text-align: center;
+    width: 320px;
+    background-color: #FFF;
+    padding: 0.7rem 1rem;
+    border-radius: 20px 20px 0 0;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;  
+    
+}
+
+nav {
+    background-color: #c40008;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    font-weight: 600;
+    height: 60px;
+    margin: 0;
+    font-size: 0.9rem; 
+}
+
+/* Logo MENU */
+nav img{   
+    margin: auto;
+    margin-left: 2%;
+    width: 10%;
+    min-width: 20%;
+   
+   
+ 
+   
+    
+}
+
+nav a:hover,
+nav a:focus {
+     color: #ffec4e;     
+}
+nav h3 {
+    margin: 0;
+    margin-left: 25px;
+    display: flex;
+    justify-content: left;
+}
+.menu-aberto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descricao{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 30px;
+    padding-top: 60px;
+    margin: auto;    
+    width: 90%;
+    
+}
+
+
+span{
+    background-color: #FFF6C3;
+}
+footer {
+    background-color: #F4EBD0;
+}
+footer p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+footer a {
+    font-size: 0.8rem;
+}
+.container-footer {    
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+  
+}
+#logo-footer {
+    min-width: 200px;
+    width: 20vw;
+    margin-left: 50px;
+}
+.container-footer a {
+    display: flex;
+    align-items: center;
+}
+.container-footer a:hover,
+.container-footer a:focus {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.footer-nav {
+    width: 40vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.footer-nav a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+}
+.footer-emojis {
+    background-image: url(../images/calcada-paulista-filtro.jpg);
+    padding: 10px;
+    width: 100%;
+}
+.emojis {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.emojis img {
+    min-width: 40px;
+    width: 5vw;
+    margin: auto;
+}
+@media screen and (max-width: 776px) {
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .descricao {
+        margin: auto 30px;
+    }
+}
+@media screen and (max-width: 426px) {
+    footer p,
+    footer a {
+        font-size: 0.7rem;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    .descricao {
+        margin: auto 5px;
+    }
+}
+/* Menu */
+@media screen and (min-width: 769px) {
+    nav h3 {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+/* Telas Grandes */
+@media screen and (min-width: 1440px) {
+    html {
+        font-size: 22px;
+    }
+}
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 26px;
+    }
+}
